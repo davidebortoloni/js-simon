@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css'
+        integrity='sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA=='
+        crossorigin='anonymous' />
+    <link rel="stylesheet" href="./style.css">
+    <title>Simon Says</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row text-center g-3">
+            <div class="col-12">
+                <h1>Simon Says</h1>
+            </div>
+            <div class="col-12">
+                <div id="introduction">
+                    <p>
+                        Premi il bottone qui sotto per avviare il gioco.<br>
+                        Verranno generati 5 numeri random e avrai 20 secondi per memorizzarli,<br>
+                        dopo 30 secondi dovrai riscriverli e dimostrare quanto vale la tua memoria.
+                    </p>
+                    <h3>Buona fortuna!</h3>
+                    <button id="start" class="btn btn-dark rounded-pill p-3">Genera i numeri</button>
+                </div>
+                <div id="numbers"></div>
+                <div id="countdown" class="h1"></div>
+                <div id="user-numbers" class="d-none">
+                    <h4>Inserisci qui i numeri</h4>
+                    <div class="mb-3">
+                        <input class="user-number" type="number" min="1" max="100">
+                        <input class="user-number" type="number" min="1" max="100">
+                        <input class="user-number" type="number" min="1" max="100">
+                        <input class="user-number" type="number" min="1" max="100">
+                        <input class="user-number" type="number" min="1" max="100">
+                    </div>
+                    <button id="confirm" class="btn btn-dark rounded-pill p-3">Conferma i numeri</button>
+                </div>
+                <div id="final-result">
+                    <div id="how-many-numbers"></div>
+                    <div id="numbers-found"></div>
+                    <button id="play-again" class="d-none btn btn-dark rounded-pill p-3">Gioca ancora</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
