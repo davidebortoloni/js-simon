@@ -62,7 +62,7 @@ playAgain.addEventListener("click", function () {
 
 // Funzione per generare un numero tra un minimo e un massimo
 function randomNumber(min, max) {
-    return Math.floor(Math.random() * max - min + min) + min;
+    return Math.floor(Math.random() * max - min + 1) + min;
 }
 // Funzione per la stampa in HTML
 function print(id, result) {
